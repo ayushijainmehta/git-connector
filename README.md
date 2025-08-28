@@ -17,35 +17,44 @@ A Spring Boot application that fetches repositories and recent commits for a Git
 
 ## REST API
 
-1. GET /api/git/repos
+###  GET `/api/git/repos`
 
-   Headers: Authorization: Bearer <GITHUB_PAT>
-   
-   Query Parameters:
-       user – GitHub username/org (required)
-       limit – Number of commits per repo (default 20)
+Fetches public repositories for a GitHub user or organization, along with recent commits.
 
-   Request : 
+###  Authorization: Bearer <GITHUB_PAT>
 
-      curl -H "Authorization: Bearer ghp_yourTokenHere" \
-     "http://localhost:8080/api/git/repos?user={username}&limit=20"
 
-   Response :
 
-      {
-         "repositories": [
-          {
-          "name": "git-connector",
-          "url": "https://github.com/ayushijainmehta/git-connector",
-          "commits": [
-            {
-             "message": "Initial commit",
-             "author": "Ayushi Jain",
-             "timestamp": "2025-08-28T15:00:30Z"
-            }
-            ]
-       }
-    
+**Query Parameters:**  
+| Parameter | Type    | Required | Description                                |
+|-----------|---------|----------|--------------------------------------------|
+| user      | string  | Yes      | GitHub username or organization            |
+| limit     | integer | No       | Number of commits per repository (default: 20) |
+
+**Request Example:**  
+```bash
+curl -H "Authorization: Bearer ghp_yourTokenHere" \
+"http://localhost:8080/api/git/repos?user={username}&limit=20"
+```
+**Response Example:**  
+```
+{
+  "repositories": [
+    {
+      "name": "git-connector",
+      "url": "https://github.com/ayushijainmehta/git-connector",
+      "commits": [
+        {
+          "message": "Initial commit",
+          "author": "Ayushi Jain",
+          "timestamp": "2025-08-28T15:00:30Z"
+        }
+      ]
+    }
+  ]
+}
+```
+```
 
 ## Setup Instructions
 
