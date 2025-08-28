@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GithubConnectorApplication {
+public class GitConnectorApplication {
     public static void main(String[] args) {
-        SpringApplication.run(GithubConnectorApplication.class, args);
+        SpringApplication.run(GitConnectorApplication.class, args);
     }
 }

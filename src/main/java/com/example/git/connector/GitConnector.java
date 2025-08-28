@@ -5,7 +5,7 @@ import com.example.git.model.Repository;
 
 import java.util.List;
 
-public interface RepositoryConnector {
+public interface GitConnector {
     List<Repository> getRepositories(String orgOrUser) throws Exception;
 
     List<Commit> getRecentCommits(String repoName, int limit) throws Exception;

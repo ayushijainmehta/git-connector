@@ -11,7 +11,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GitHubConnector implements RepositoryConnector {
+public class GitHubConnector implements GitConnector {
 
     private static final String BASE_URL = "https://api.github.com";
     private final String token;
