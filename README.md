@@ -54,7 +54,6 @@ curl -H "Authorization: Bearer ghp_yourTokenHere" \
   ]
 }
 ```
-```
 
 ## Setup Instructions
 
