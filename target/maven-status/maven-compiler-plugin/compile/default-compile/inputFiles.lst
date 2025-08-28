@@ -1,0 +1,11 @@
+/Users/ayushijain/Downloads/github-connector-generic/src/main/java/com/example/git/GithubConnectorApplication.java
+/Users/ayushijain/Downloads/github-connector-generic/src/main/java/com/example/git/connector/GitHubConnector.java
+/Users/ayushijain/Downloads/github-connector-generic/src/main/java/com/example/git/connector/RepositoryConnector.java
+/Users/ayushijain/Downloads/github-connector-generic/src/main/java/com/example/git/connector/RetryTemplate.java
+/Users/ayushijain/Downloads/github-connector-generic/src/main/java/com/example/git/controller/GitController.java
+/Users/ayushijain/Downloads/github-connector-generic/src/main/java/com/example/git/exception/ErrorResponse.java
+/Users/ayushijain/Downloads/github-connector-generic/src/main/java/com/example/git/exception/GitException.java
+/Users/ayushijain/Downloads/github-connector-generic/src/main/java/com/example/git/exception/GlobalExceptionHandler.java
+/Users/ayushijain/Downloads/github-connector-generic/src/main/java/com/example/git/model/Commit.java
+/Users/ayushijain/Downloads/github-connector-generic/src/main/java/com/example/git/model/Repository.java
+/Users/ayushijain/Downloads/github-connector-generic/src/main/java/com/example/git/service/GitService.java
