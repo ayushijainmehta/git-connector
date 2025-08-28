@@ -1,6 +1,6 @@
 # GitHub Repository Activity Connector
 
-A Spring Boot application that fetches repositories and recent commits for a GitHub user or organization using a **Personal Access Token (PAT)**. Supports both **public repositories**, pagination, configurable commit limits, and secure token-based authentication.
+A Spring Boot application that fetches repositories and recent commits for a GitHub user or organization using a **Personal Access Token (PAT)**. Supports **public repositories**, pagination, configurable commit limits.
 
 ---
 
