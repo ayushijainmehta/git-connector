@@ -22,6 +22,8 @@ A Spring Boot application that fetches repositories and recent commits for a Git
 2. mvn clean install
 3. mvn spring-boot:run
 
+---
+
 ## Steps to Create a GitHub PAT 
 
 1. Go to GitHub → Settings → Developer Settings → Personal Access Tokens → Tokens (classic)
@@ -29,5 +31,14 @@ A Spring Boot application that fetches repositories and recent commits for a Git
 3. Select the required scopes: repo, read:org
 4. Click Generate token
 
+---
 
+## Production Readiness
+
+1. Security & Configuration: Manage secrets via AWS Secrets Manager, and centralize configurations in application.properties or environment-specific profiles.
+2. Reliability & Resilience: Add circuit breakers, caching of recent commits, and handling of GitHub API rate limits.
+3. Observability: Implement structured logging, metrics, and error reporting for better monitoring and debugging.
+4. API Enhancements: Provide Swagger/OpenAPI documentation.
+5. Testing & CI/CD: Include comprehensive unit and integration tests, automated pipelines, and quality checks.
+6. Deployment & Containerization: Package the application as a Docker container.
 
