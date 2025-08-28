@@ -20,6 +20,7 @@ A Spring Boot application that fetches repositories and recent commits for a Git
 1. GET /api/git/repos
 
    Headers: Authorization: Bearer <GITHUB_PAT>
+   
    Query Parameters:
        user – GitHub username/org (required)
        limit – Number of commits per repo (default 20)
@@ -37,12 +38,12 @@ A Spring Boot application that fetches repositories and recent commits for a Git
           "name": "git-connector",
           "url": "https://github.com/ayushijainmehta/git-connector",
           "commits": [
-           {
-            "message": "Initial commit",
-            "author": "Ayushi Jain",
-            "timestamp": "2025-08-28T15:00:30Z"
-           }
-           ]
+            {
+             "message": "Initial commit",
+             "author": "Ayushi Jain",
+             "timestamp": "2025-08-28T15:00:30Z"
+            }
+            ]
        }
     
 
